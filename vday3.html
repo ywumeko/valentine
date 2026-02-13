@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>for you ♡</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f6;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 100px 320px 100px;
+      grid-template-rows: 100px 320px 100px;
+      gap: 10px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .note {
+      grid-column: 2;
+      grid-row: 2;
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff5fa2;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff5fa2;
+      color: white;
+      cursor: pointer;
+    }
+
+    .scrap {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      padding: 10px;
+    }
+
+    /* little scrapbook chaos */
+    .r1 { transform: rotate(-8deg); }
+    .r2 { transform: rotate(6deg); }
+    .r3 { transform: rotate(-5deg); }
+    .r4 { transform: rotate(10deg); }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- top row -->
+    <img src="pem1.png" class="scrap r1">
+    <img src="pip1.png" class="scrap r2">
+    <img src="pem2.png" class="scrap r3">
+
+    <!-- middle row -->
+    <img src="pip2.png" class="scrap r4">
+    <div class="note">
+      <h2>♡</h2>
+      <p>
+        sometimes i don’t say it out loud, but i’m genuinely grateful for you and for all the small things you do that mean so much to me. thank you for choosing me, for caring in ways that feel steady and sincere, and for being here even in the ordinary moments. i cherish the comfort you give, the warmth you bring, and the calm i feel knowing i don’t have to face things alone. i hope you know how deeply appreciated you are, not just today, but always.
+      </p>
+
+      <a href="https://wa.me/6289663300925?text=happy%20valentines%20day">
+        <button>send this back to me? 💌</button>
+      </a>
+    </div>
+    <img src="pip3.png" class="scrap r2">
+
+    <!-- bottom row -->
+    <img src="pem3.png" class="scrap r3">
+    <img src="pip4.png" class="scrap r1">
+    <img src="pem4.png" class="scrap r4">
+
+  </div>
+
+  <script>
+    function next() {
+      window.location.href = "vday3.html";
+    }
+  </script>
+
+</body>
+</html>

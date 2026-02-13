@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>for you ♡</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f6;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 100px 320px 100px;
+      grid-template-rows: 100px 320px 100px;
+      gap: 10px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .note {
+      grid-column: 2;
+      grid-row: 2;
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff5fa2;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff5fa2;
+      color: white;
+      cursor: pointer;
+    }
+
+    .scrap {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      padding: 10px;
+    }
+
+    /* little scrapbook chaos */
+    .r1 { transform: rotate(-8deg); }
+    .r2 { transform: rotate(6deg); }
+    .r3 { transform: rotate(-5deg); }
+    .r4 { transform: rotate(10deg); }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- top row -->
+    <img src="pip1.png" class="scrap r1">
+    <img src="pem1.png" class="scrap r2">
+    <img src="pip2.png" class="scrap r3">
+
+    <!-- middle row -->
+    <img src="pem2.png" class="scrap r4">
+    <div class="note">
+      <h2>hi pip! 💗</h2>
+      <p>
+        happy valentine’s day 🤍
+        thank you for being someone who feels like a safe place for me.
+        thank you for your patience, your presence, and the way you stay
+        even when things aren’t perfect. being with you makes everything
+        feel a little quieter and a little lighter, and i really appreciate
+        how you make me feel understood without having to explain too much.
+      </p>
+      <button onclick="next()">next ♡</button>
+    </div>
+    <img src="pem3.png" class="scrap r2">
+
+    <!-- bottom row -->
+    <img src="pip3.png" class="scrap r3">
+    <img src="pem4.png" class="scrap r1">
+    <img src="pip4.png" class="scrap r4">
+
+  </div>
+
+  <script>
+    function next() {
+      window.location.href = "vday3.html";
+    }
+  </script>
+
+</body>
+</html>

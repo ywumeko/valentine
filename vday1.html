@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>valentine 💗</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #ff5fa2;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    #yes {
+      background-color: #ff5fa2;
+      color: white;
+    }
+
+    #no {
+      background-color: #ccc;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>hi, will you be my valentine? 💗</h1>
+    <button id="yes" onclick="goNext()">yes 💕</button>
+    <button id="no" onmouseover="moveNo()">no 😐</button>
+  </div>
+
+<script>
+  function goNext() {
+    window.location.href = "vday2.html";
+  }
+
+  function moveNo() {
+    const no = document.getElementById("no");
+    no.style.top = Math.random() * 80 + "%";
+    no.style.left = Math.random() * 80 + "%";
+  }
+</script>
+</body>
+</html>
